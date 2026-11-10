@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | Villa de Elciego</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Villa de Elciego</a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ofertas">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          <li class="nav-item mt-2 mt-lg-0 ms-lg-3">
+            <a class="btn btn-dorado" href="reservar.html">Reservar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENEDOR VIÑEDO -->
+  <header class="hero">
+    <div class="container">
+      <p class="etiqueta">Elciego · Rioja Alavesa</p>
+      <h1 class="mb-3">Descansa entre viñedos y tradición</h1>
+      <p>Las habitaciones más acogedoras en pleno casco histórico, a un paso de la Plaza Mayor y de las bodegas más emblemáticas.</p>
+      <a href="habitaciones.html" class="btn btn-dorado">Ver habitaciones</a>
+    </div>
+  </header>
+
+  <!-- BUSCADOR -->
+  <section class="py-4" id="reservar">
+    <div class="container">
+      <div class="card shadow">
+        <div class="card-body p-4">
+          <h3 class="card-title">Reserva tu estancia</h3>
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <label for="entrada" class="form-label small">ENTRADA</label>
+              <input type="date" id="entrada" class="form-control">
+            </div>
+            <div class="col-6 col-md-3">
+              <label for="salida" class="form-label small">SALIDA</label>
+              <input type="date" id="salida" class="form-control">
+            </div>
+            <div class="col-12 col-md-3">
+              <label for="huespedes" class="form-label small">HUÉSPEDES</label>
+              <select id="huespedes" class="form-select">
+                <option value="1">1 huésped</option>
+                <option value="2" selected>2 huéspedes</option>
+                <option value="3">3 huéspedes</option>
+                <option value="4">4 huéspedes</option>
+                <option value="5">5 huéspedes</option>
+                <option value="6">6 huéspedes</option>
+                <option value="7">7 huéspedes</option>
+                <option value="8">8 huéspedes</option>
+                <option value="9">9 huéspedes</option>
+                <option value="10">10 huéspedes</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-3 d-flex align-items-end">
+              <a href="reservar.html" id="buscar" class="btn btn-burdeos w-100">Buscar disponibilidad</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL -->
+  <section class="py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2>Descubre Elciego</h2>
+          <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carrusel-1.jpg" class="d-block w-100" alt="Casco histórico de Elciego">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrusel-2.jpg" class="d-block w-100" alt="Casco histórico de Elciego 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carrusel-3.jpg" class="d-block w-100" alt="Casco histórico de Elciego 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTAS -->
+  <section class="fondo-arena py-5" id="ofertas">
+    <div class="container">
+      <h2>Ofertas y promociones</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card shadow h-100">
+            <img src="img/oferta-1.jpg" alt="Escapada con desayuno" class="card-img-top foto">
+            <div class="card-body">
+              <h3 class="card-title">Escapada con desayuno</h3>
+              <p class="card-text small">Estancia con desayuno incluido en pleno casco histórico de Elciego.</p>
+              <p class="etiqueta">Desde 32 € por persona y noche</p>
+              <a href="habitaciones.html" class="btn btn-burdeos w-100">Ver oferta</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card shadow h-100">
+            <img src="img/oferta-2.jpg" alt="Enoturismo en Rioja Alavesa" class="card-img-top foto">
+            <div class="card-body">
+              <h3 class="card-title">Enoturismo en Rioja Alavesa</h3>
+              <p class="card-text small">Descuentos en visitas a bodegas cercanas para disfrutar del vino al mejor precio.</p>
+              <p class="etiqueta">Promoción online</p>
+              <a href="habitaciones.html" class="btn btn-burdeos w-100">Ver oferta</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="py-5" id="servicios">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <p class="etiqueta">El hotel</p>
+          <h2>Historia, vino, descanso</h2>
+          <p>
+            Tranquilidad local, tradición vinícola y atención cercana en un entorno
+            emblemático de Álava. Habitaciones dobles, individuales y un apartamento,
+            todas con baño, TV, calefacción y desayuno incluido.
+          </p>
+          <span class="badge rounded-pill chip">Wifi gratis</span>
+          <span class="badge rounded-pill chip">Restaurante</span>
+          <span class="badge rounded-pill chip">Bar</span>
+          <span class="badge rounded-pill chip">Admite mascotas</span>
+        </div>
+        <div class="col-md-6">
+          <img src="img/hotel.jpg" alt="Fachada del hotel" class="foto rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="fondo-arena py-5" id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="ratio ratio-4x3 mapa-contacto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94107.29809911063!2d-2.7620001656060893!3d42.5159304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4557f8bbc9497d%3A0x6555d28197c5f23e!2sHotel%20Villa%20Elciego!5e0!3m2!1ses!2ses!4v1794210231358!5m2!1ses!2ses"
+              title="Mapa de Hotel Villa Elciego"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>C/ Norte, 1 · 01340 Elciego (Álava)</p>
+          <p>+34 945 60 65 97</p>
+          <p><a href="mailto:reservas@elciegohotel.com" class="correo">reservas@elciegohotel.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <img src="img/logo.png" alt="Logo Villa de Elciego" height="45">
+        <h3 class="text-white mb-0">Villa de Elciego</h3>
+      </div>
+      <p class="mb-1 footerlink">
+        <a href="index.html" class="footerlink">Inicio</a> · 
+        <a href="habitaciones.html" class="footerlink">Habitaciones</a> · 
+        <a href="index.html#ofertas" class="footerlink">Ofertas</a> · 
+        <a href="index.html#servicios" class="footerlink">Servicios</a> · 
+        <a href="index.html#contacto" class="footerlink">Contacto</a> · 
+        <a href="reservar.html" class="footerlink">Reservar</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var entrada = document.getElementById('entrada');
+      var salida = document.getElementById('salida');
+      var huespedes = document.getElementById('huespedes');
+      var boton = document.getElementById('buscar');
+      if (!entrada || !salida || !huespedes || !boton) return;
+
+      var DIA = 86400000;
+      function texto(d) {
+        return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+      }
+      function mas(t, n) {
+        var p = t.split('-');
+        var d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2]) + n * DIA);
+        return d.getUTCFullYear() + '-' + ('0' + (d.getUTCMonth() + 1)).slice(-2) + '-' + ('0' + d.getUTCDate()).slice(-2);
+      }
+
+      var hoy = texto(new Date());
+      entrada.min = hoy;
+      salida.min = mas(hoy, 1);
+
+      entrada.addEventListener('change', function () {
+        if (!entrada.value) return;
+        salida.min = mas(entrada.value, 1);
+        salida.max = mas(entrada.value, 30);
+        if (salida.value && (salida.value < salida.min || salida.value > salida.max)) salida.value = salida.min;
+      });
+
+      // Guarda fechas y huéspedes para que reservar.html los recoja
+      boton.addEventListener('click', function () {
+        try {
+          localStorage.setItem('elciegoReserva', JSON.stringify({
+            huespedes: parseInt(huespedes.value, 10),
+            entrada: entrada.value,
+            salida: salida.value,
+            dobles: null
+          }));
+        } catch (e) { /* sin almacenamiento */ }
+      });
+    })();
+  </script>
+</body>
+</html>
